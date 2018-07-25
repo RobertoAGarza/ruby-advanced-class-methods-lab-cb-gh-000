@@ -47,7 +47,8 @@ class Song
 
   def self.new_from_filename(fileName)
     @song = self.new
-    @song.name = fileName.match(/\w* -/).to_s
+    array = fileName.split(" - ")
+    @song.name = fileName.match(/\w* /).to_s
     @song
   end
 end
