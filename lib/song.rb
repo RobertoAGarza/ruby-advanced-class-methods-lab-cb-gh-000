@@ -48,5 +48,6 @@ class Song
   def self.new_from_filename(fileName)
     @song = self.new
     @song.name = fileName.match(/\w* -/)
+    @song
   end
 end
