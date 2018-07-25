@@ -7,15 +7,15 @@ class Song
   end
 
   def self.create
-    @name = self.new
-    @name.save
-    @name
+    @song = self.new
+    @song.save
+    @song
   end
 
   def self.new_by_name(name)
-    @name = name.new
-    @name.save
-    @name
+    @song = self.new
+    @song.name = name
+    @song
   end
   def save
     self.class.all << self
