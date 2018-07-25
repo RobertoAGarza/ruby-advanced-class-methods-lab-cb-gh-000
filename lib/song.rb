@@ -48,7 +48,7 @@ class Song
   def self.new_from_filename(fileName)
     @song = self.new
     array = fileName.split(" - ")
-    @song.name = fileName.match(/\w* /).to_s
-    @song
+    @song.name = array[0]
+    @song.artist = array[1]
   end
 end
