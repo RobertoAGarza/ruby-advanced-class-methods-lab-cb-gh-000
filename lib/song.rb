@@ -17,12 +17,12 @@ class Song
     @song.name = name
     @song
   end
-  
+
   def save
     self.class.all << self
   end
 
   def find_by_name(name)
     @@all.find(name)
-  end 
+  end
 end
