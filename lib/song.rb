@@ -49,7 +49,7 @@ class Song
     @song = self.new
     array = fileName.split(" - ")
     @song.name = array[1]
-    @song.artist_name = array[0]
+    @song.artist_name = array[0].chomp(".mp3")
     @song
   end
 end
