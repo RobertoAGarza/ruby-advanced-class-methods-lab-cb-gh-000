@@ -23,6 +23,6 @@ class Song
   end
 
   def find_by_name(name)
-    @@all.find(name)
+    @@all.all.find(name)
   end
 end
