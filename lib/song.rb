@@ -50,5 +50,6 @@ class Song
     array = fileName.split(" - ")
     @song.name = array[0]
     @song.artist = array[1]
+    @song
   end
 end
